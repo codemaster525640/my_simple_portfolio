@@ -1,7 +1,193 @@
 <!DOCTYPE html>
-<html>
-    <head></head>
-    <body>
-        <p>Hello</p>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Davis | Full Stack Developer</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #020617;
+    }
+
+    header h1 {
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: #e2e8f0;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 80vh;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      color: #38bdf8;
+    }
+
+    .hero p {
+      margin: 20px 0;
+      max-width: 500px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #38bdf8;
+      color: #020617;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #020617;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Davis.dev</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hi, I'm davis 👋</h2>
+    <p>Full Stack Developer building modern and scalable web applications using MERN stack.</p>
+    <div>
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a full-stack developer passionate about building high-quality web applications.
+      I specialize in frontend and backend development with a focus on performance,
+      scalability, and clean code.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">
+        <h3>Frontend</h3>
+        <p>HTML, CSS, JavaScript, React</p>
+      </div>
+      <div class="card">
+        <h3>Backend</h3>
+        <p>Node.js, Express</p>
+      </div>
+      <div class="card">
+        <h3>Database</h3>
+        <p>MongoDB</p>
+      </div>
+      <div class="card">
+        <h3>Tools</h3>
+        <p>Git, GitHub, Postman</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>E-commerce App</h3>
+        <p>Full MERN stack app with authentication, payments, and admin dashboard.</p>
+      </div>
+      <div class="card">
+        <h3>Social Media App</h3>
+        <p>Users can post, like, and comment with real-time updates.</p>
+      </div>
+      <div class="card">
+        <h3>Task Manager API</h3>
+        <p>RESTful API with authentication and CRUD operations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: davisjrmaster@gmail.com</p>
+    <p>GitHub: github.com/codemaster</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Davis | Full Stack Developer</p>
+  </footer>
+
+</body>
 </html>
